@@ -8,13 +8,13 @@ env:
   JIRA_TOKEN: ${{ secrets.JIRA_TOKEN }}
 
 on:
-  pull_request:
-    branches:
-      - main
-      - 'release/**'
-
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+  pull_request:
+    branches:
+      - master
+      - main
+      - release/**
 
 jobs:
   pr_validation:
@@ -23,18 +23,25 @@ jobs:
     timeout-minutes: 15
 
     steps:
-      - uses: actions/checkout@v2
-        with:
-          persist-credentials: true
+      - name: Checkout
+        uses: actions/checkout@v3
 
       - uses: oleksiyrudenko/gha-git-credentials@v2-latest
         with:
           global: false
           token: '${{ secrets.GH_ACTIONS_PAT }}'
 
-      - uses: dart-lang/setup-dart@v1.3
+      - name: Cache Flutter dependencies
+        uses: actions/cache@v2
         with:
-          sdk: ${{ env.dart_version }}
+          path: /opt/hostedtoolcache/flutter
+          key: ${{ env.flutter_version }}-flutter
+
+      - name: Install Flutter
+        uses: subosito/flutter-action@v1
+        with:
+          flutter-version: ${{ env.flutter_version }}
+          channel: 'stable'
 
       - name: Git Config Update
         run: git config --global url."https://x-token-auth:${{ secrets.GH_ACTIONS_PAT }}@github.com".InsteadOf https://github.com
@@ -43,7 +50,7 @@ jobs:
         run:  ./shell_scripts/authorize_cloudsmith.sh ${{ secrets.CLOUDSMITH_API_KEY }}
 
       - name: Pub get
-        run: dart pub get
+        run: flutter pub get
 
       - name: Validate PR is ready
         run: dart pub run mplat_pr_tools validatePRIsReadyForMerge --publishDryRun --no-test --no-generateCoverage --no-analyze

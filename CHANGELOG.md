@@ -1,3 +1,11 @@
+# 5.15.0
+
+- chore:DEV-139004 publish to cloudsmith
+
+# 5.14.0
+
+- chore:DEV-139004 publish to cloudsmith
+
 # 5.13.0
 
 - chore: bump to 5.11.0
