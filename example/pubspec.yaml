@@ -15,7 +15,13 @@ dependencies:
 
   firebase_messaging: ^14.0.3
 
+# dependency_overrides:
+#   alkami_core_dependencies:
+#     path: ../../flutter_platform/packages/alkami_core_dependencies
+
 dev_dependencies:
+  # alkami_core_dev_dependencies:
+  #   path: ../../flutter_platform/packages/alkami_core_dev_dependencies
   alkami_core_dev_dependencies: 
     hosted: https://dart.cloudsmith.io/alkami/flutter/
     version: ^2.1.0
