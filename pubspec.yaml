@@ -7,7 +7,7 @@ documentation: https://learn.apptentive.com/knowledge-base/apptentive-sdk-flutte
 publish_to: https://dart.cloudsmith.io/alkami/flutter/
 
 environment:
-  sdk: '>=2.15.0 <3.0.0'
+  sdk: '>=2.18.0 <3.0.0'
   flutter: ">=3.3.0"
 
 dependencies:
