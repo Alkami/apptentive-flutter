@@ -15,6 +15,9 @@ dependencies:
     hosted: https://dart.cloudsmith.io/alkami/flutter/
     version: ^2.1.0
 
+  flutter:
+    sdk: flutter    
+
 # dependency_overrides:
 #   alkami_core_dependencies:
 #     path: ../flutter_platform/packages/alkami_core_dependencies

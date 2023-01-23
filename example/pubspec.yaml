@@ -13,6 +13,9 @@ dependencies:
   apptentive_flutter:
     path: ../
 
+  flutter:
+    sdk: flutter
+
   firebase_messaging: ^14.0.3
 
 # dependency_overrides:
