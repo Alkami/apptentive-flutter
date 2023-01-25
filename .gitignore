@@ -120,3 +120,5 @@ app.*.symbols
 
 # Tarball for publishing
 package.tar.gz
+.fvm/flutter_sdk
+.gitignore
