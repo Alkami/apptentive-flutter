@@ -1,3 +1,7 @@
+# 7.5.0
+
+- chore: DEV-147361 update jira link worflow
+
 # 7.4.0
 
 - enh: DEV-147361 auto publish hotfix branches
