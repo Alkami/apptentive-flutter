@@ -18,7 +18,6 @@ test/generated_coverage_helper_test.dart
 .fvm/
 
 # IntelliJ related
-*.iml
 *.ipr
 *.iws
 .idea/

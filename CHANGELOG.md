@@ -1,3 +1,7 @@
+# 7.7.0
+
+- enh: DEV-153701 enhancements to Android Studio experience
+
 # 7.6.0
 
 - enh: DEV-152053 Dynamically write/remove pubspec_overrides.yaml
