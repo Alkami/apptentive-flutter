@@ -1,3 +1,7 @@
+# 7.10.0
+
+- enh: DEV-156308 Convert flutter_platform out of a monorepo
+
 # 7.9.0
 
 - enh: DEV-148888 Drop Android 8 Support
