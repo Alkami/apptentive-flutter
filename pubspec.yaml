@@ -1,6 +1,6 @@
 name: apptentive_flutter
 description: Apptentive SDK for Flutter
-version: 7.9.0
+version: 7.10.0
 repository: https://github.com/apptentive/apptentive-flutter
 issue_tracker: https://github.com/apptentive/apptentive-flutter/issues
 documentation: https://learn.apptentive.com/knowledge-base/apptentive-sdk-flutter-plugin-guide/
@@ -11,18 +11,12 @@ environment:
   flutter: ">=3.3.0"
 
 dependencies:
-  alkami_core_dependencies: 
-    hosted: https://dart.cloudsmith.io/alkami/flutter/
-    version: ^3.0.0
-
   flutter:
-    sdk: flutter    
+    sdk: flutter
 
 dev_dependencies:
-  alkami_core_dev_dependencies: 
-    hosted: https://dart.cloudsmith.io/alkami/flutter/
-    version: ^3.0.0
-
+  flutter_test:
+    sdk: flutter
 
 flutter:
   plugin:

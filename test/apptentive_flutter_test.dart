@@ -1,5 +1,5 @@
-import 'package:alkami_core_dev_dependencies/alkami_core_dev_dependencies.dart';
-import 'package:alkami_core_dependencies/alkami_core_dependencies.dart';
+import 'package:flutter/services.dart';
+import 'package:flutter_test/flutter_test.dart';
 
 void main() {
   const MethodChannel channel = MethodChannel('apptentive_flutter');
