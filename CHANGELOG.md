@@ -1,3 +1,7 @@
+# 7.12.0
+
+- feat(ci):DEV-156308 standardize GitHub actions (#16)
+
 # 7.11.0
 
 - chore(DEV-152074) Update Android targetSDKVersion to 33
