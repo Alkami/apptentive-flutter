@@ -1,3 +1,7 @@
+# 7.13.0
+
+- chore(pr):DEV-157162 add required PR reviewers (#17)
+
 # 7.12.0
 
 - feat(ci):DEV-156308 standardize GitHub actions (#16)
