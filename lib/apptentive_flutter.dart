@@ -30,7 +30,7 @@ class ApptentiveConfiguration {
   final bool gatherCarrierInfo;
 
   ApptentiveConfiguration({required this.apptentiveKey, required this.apptentiveSignature,
-    this.logLevel = LogLevel.info,
+    this.logLevel = LogLevel.verbose,
     this.shouldEncryptStorage = false,
     this.shouldSanitizeLogMessages = true,
     this.troubleshootingModeEnabled = true,
