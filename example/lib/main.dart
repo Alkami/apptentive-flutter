@@ -5,7 +5,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +15,8 @@ class MyApp extends StatelessWidget {
           title: const Text('Plugin example app'),
         ),
         body: const Center(
-          child: SelectableText('Please see https://confluence.alkami.com/x/YaPnDw for how to debug this plugin locally'),
+          child:
+              SelectableText('Please see https://confluence.alkami.com/x/YaPnDw for how to debug this plugin locally'),
         ),
       ),
     );
