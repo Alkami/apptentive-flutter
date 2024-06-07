@@ -2,14 +2,14 @@ group 'com.apptentive.apptentive_flutter'
 version '1.0'
 
 buildscript {
-    ext.kotlin_version = '1.8.20'
+    ext.kotlin_version = '2.0.0'
     repositories {
         google()
         mavenCentral()
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.4.2'
+        classpath 'com.android.tools.build:gradle:8.4.1'
     }
 }
 
@@ -25,6 +25,8 @@ apply plugin: 'com.android.library'
 android {
     compileSdkVersion 33
 
+    namespace 'com.apptentive.apptentive_flutter'
+    
     defaultConfig {
         minSdkVersion 28
         targetSdkVersion 33
