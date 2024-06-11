@@ -1,3 +1,7 @@
+# 7.14.0
+
+- chore(gradle):DEV-174002 Upgrade to latest Gradle (version 8.6, dependency version 8.4.1) (#20)
+
 # 7.13.0
 
 - chore(pr):DEV-157162 add required PR reviewers (#17)
