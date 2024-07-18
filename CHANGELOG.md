@@ -1,3 +1,7 @@
+# 7.15.0
+
+- chore(targetSDK):DEV-172422 update target SDK to 34 (#21)
+
 # 7.14.0
 
 - chore(gradle):DEV-174002 Upgrade to latest Gradle (version 8.6, dependency version 8.4.1) (#20)
